@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "on-tertiary-fixed": "#341100",
+              "outline-variant": "#c1c6d6",
+              "primary-fixed": "#d8e2ff",
+              "surface-tint": "#005bc0",
+              "on-secondary": "#ffffff",
+              "inverse-on-surface": "#f0f1f2",
+              "inverse-surface": "#2e3132",
+              "primary-fixed-dim": "#adc7ff",
+              "background": "#f8f9fa",
+              "outline": "#727785",
+              "tertiary": "#9e4300",
+              "primary-container": "#1a73e8",
+              "secondary-container": "#b2c9fe",
+              "tertiary-fixed-dim": "#ffb691",
+              "tertiary-container": "#c55500",
+              "on-tertiary-fixed-variant": "#783100",
+              "secondary-fixed": "#d8e2ff",
+              "secondary-fixed-dim": "#afc7fb",
+              "surface-variant": "#e1e3e4",
+              "on-primary": "#ffffff",
+              "error-container": "#ffdad6",
+              "surface-dim": "#d9dadb",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#004493",
+              "on-secondary-fixed-variant": "#2e4673",
+              "on-tertiary": "#ffffff",
+              "surface-container-highest": "#e1e3e4",
+              "surface-bright": "#f8f9fa",
+              "primary": "#005bbf",
+              "surface": "#f8f9fa",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-primary-fixed": "#001a41",
+              "inverse-primary": "#adc7ff",
+              "on-surface": "#191c1d",
+              "on-secondary-container": "#3d5481",
+              "on-secondary-fixed": "#001a41",
+              "surface-container-low": "#f3f4f5",
+              "surface-container": "#edeeef",
+              "on-background": "#191c1d",
+              "on-primary-container": "#ffffff",
+              "on-surface-variant": "#414754",
+              "on-tertiary-container": "#0e0200",
+              "secondary": "#475e8c",
+              "tertiary-fixed": "#ffdbcb",
+              "surface-container-high": "#e7e8e9"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #f8f9fa;
+        color: #191c1d;
+        font-family: 'Inter', sans-serif;
+      }
+      .editorial-shadow {
+        box-shadow: 0 20px 40px rgba(25, 28, 29, 0.06);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/85 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-blue-700 tracking-tighter font-headline">
+                The Scholarly Editorial
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-headline font-bold text-sm tracking-tight">
+<a class="text-slate-600 hover:text-blue-700 transition-colors" href="#">Beranda</a>
+<a class="text-slate-600 hover:text-blue-700 transition-colors" href="#">Profil Sekolah</a>
+<a class="text-slate-600 hover:text-blue-700 transition-colors" href="#">Struktur Organisasi</a>
+<a class="text-blue-700 border-b-2 border-blue-700 pb-1" href="#">Kritik &amp; Saran</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-bold text-sm hover:opacity-90 active:scale-95 transition-all">
+                Login Siswa
+            </button>
+</nav>
+</header>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Side: Editorial Content -->
+<div class="lg:col-span-5 space-y-8">
+<div class="space-y-4">
+<span class="text-primary font-bold tracking-widest text-xs uppercase font-label">Suara Anda Berharga</span>
+<h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tighter">
+                        Kritik &amp; <br/><span class="text-primary">Saran.</span>
+</h1>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-md">
+                    Kami percaya bahwa pendidikan yang berkualitas lahir dari dialog yang terbuka. Sampaikan aspirasi, kendala, atau apresiasi Anda untuk membangun sekolah yang lebih baik.
+                </p>
+<div class="space-y-6 pt-8">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Privasi Terjamin</h4>
+<p class="text-sm text-on-surface-variant">Setiap masukan yang masuk akan diproses secara rahasia dan profesional.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary" data-icon="speed">speed</span>
+<div>
+<h4 class="font-headline font-bold text-on-surface">Respon Cepat</h4>
+<p class="text-sm text-on-surface-variant">Tim administrasi kami akan meninjau laporan Anda dalam 2x24 jam kerja.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Interaction Canvas -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl editorial-shadow relative overflow-hidden">
+<!-- Subtle background decoration -->
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
+<form class="space-y-8 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label" for="nama">Nama Lengkap</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-4 text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all" id="nama" placeholder="Contoh: Andi Wijaya" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label" for="email">Email Aktif</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-4 text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all" id="email" placeholder="andi@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label" for="kategori">Kategori Masukan</label>
+<select class="w-full bg-surface-container-highest border-none rounded-md px-4 py-4 text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all appearance-none" id="kategori">
+<option disabled="" selected="" value="">Pilih kategori...</option>
+<option value="akademik">Akademik &amp; Kurikulum</option>
+<option value="fasilitas">Fasilitas Sekolah</option>
+<option value="keamanan">Keamanan &amp; Ketertiban</option>
+<option value="pelayanan">Pelayanan Administrasi</option>
+<option value="lainnya">Lainnya</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="block text-xs font-bold text-on-surface-variant uppercase tracking-widest font-label" for="pesan">Pesan Anda</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-md px-4 py-4 text-on-surface focus:ring-2 focus:ring-primary focus:bg-white transition-all resize-none" id="pesan" placeholder="Tuliskan kritik atau saran Anda secara detail di sini..." rows="6"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto bg-primary text-on-primary px-12 py-4 rounded-md font-headline font-bold text-lg hover:shadow-lg hover:translate-y-[-2px] transition-all flex items-center justify-center gap-3" type="submit">
+                                Kirim Masukan
+                                <span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+<p class="mt-4 text-xs text-on-surface-variant">
+                                Dengan menekan tombol kirim, Anda menyetujui kebijakan privasi kami mengenai pengolahan data masukan.
+                            </p>
+</div>
+</form>
+</div>
+<!-- Secondary Visual Element: Image Overlay Pattern -->
+<div class="mt-12 grid grid-cols-2 gap-6">
+<div class="h-48 rounded-xl overflow-hidden relative">
+<img alt="School environment" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="modern minimalist school hallway with clean white walls and natural sunlight streaming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbXU33SNeu4EYeabmO9JAY8fRB3ySi6Fmi8bbBbbFaHUXtLyxXYDqiFBE8H5ZYalWMfeYC8yNRTM76LZgTM2FZff882kTmqLZFKfmyDa5Me5uwEBhw6VIqDGkvIwg3n6HPbavhGtsOVIgSft0j04_41p1U16se9EWRnc1kY9pFJh5kjgYOOtfd-qOq42nRCJ4oK0AWWyDc2qE9ZaWI_LfBbpYx-D_837vZQhEptGTEU-rgpFscwW5RWh2y06uCV_pXJua1sLsyqvQ"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+<div class="h-48 rounded-xl overflow-hidden relative">
+<img alt="Library atmosphere" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="blurred bookshelves in a high-end academic library with soft ambient lighting creating a scholarly atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO_vIRqhn5agLA4q2p_6LHeVEWZ6zurfbagaA46dtXQAqY14oV1ZzIdJz_Y5vg6Fl4sCYbF5r5EMDYZQuYCdd62RuIYp2AxXwUjtSpva32VD1IK6Z_hIJQPBeqEFLnBOVdU4DG5HuZ-ooN4PeJ9Z1JGQhCzwF-Gwskn_CcPb1GRyntC0LuENS949bvXCmsDg0QFM62IK65kq9RgV61Y4CyDmfO39Ukx_Oq87JN1N_8qJyIe6Ddio2CH6nLI1AI1pFUQ_UHfLbfWis"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t-0 tonal-shift bg-slate-100">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1 space-y-4">
+<div class="font-headline font-extrabold text-blue-800 text-xl">The Scholarly Editorial</div>
+<p class="text-sm text-slate-500 font-body">Membentuk masa depan melalui kurasi pendidikan yang berwibawa dan inklusif.</p>
+</div>
+<div>
+<h5 class="font-headline font-bold text-slate-900 mb-4">Navigasi</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Beranda</a></li>
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Profil Sekolah</a></li>
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Kritik &amp; Saran</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-slate-900 mb-4">Sosial Media</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Facebook</a></li>
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Instagram</a></li>
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">LinkedIn</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-slate-900 mb-4">Bantuan</h5>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Kontak</a></li>
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Quick Links</a></li>
+<li><a class="hover:text-blue-700 underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 py-8 border-t border-slate-200">
+<p class="text-sm text-slate-500 text-center">© 2024 The Scholarly Editorial. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
